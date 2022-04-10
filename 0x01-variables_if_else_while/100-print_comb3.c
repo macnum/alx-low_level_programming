@@ -1,29 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - main function in c
+ * Return: exit code (0 if no errors)
  */
+
 int main(void)
 {
-	int d;
+	int a = 48;
+	int b = 48;
 
-	for (d = 0; d < 90; d++)
+	while (a <= 57)
 	{
-		for ()
+		b = (a + 1);
+		while (b <= 57)
 		{
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
+			putchar(a);
+			putchar(b);
+			if (a < 56 || b < 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			else
+			{
+				putchar('\n');
+			}
+			b++;
 		}
-		if (d != 89)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		a++;
 	}
-	putchar('\n');
-	
 	return (0);
 }
