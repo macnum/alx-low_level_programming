@@ -1,24 +1,41 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - main function in c
+ * Return: exit code (0 if no errors)
  */
+
 int main(void)
 {
-	int d;
+	int a;
+	int comma;
+	int space;
+	int end;
 
-	for (d = '0'; d <= '9'; d++)
+	a = 48;
+	comma = 44;
+	space = 32;
+	end = '\n';
+
+	while (a <= 57)
 	{
-		putchar(d);
-		if (d != '9')
+
+		putchar(a);
+
+		if (a < 57)
 		{
-			putchar(',');
-			putchar(' ');
+			a++;
+			putchar(comma);
+			putchar(space);
+		}
+
+		else
+		{
+			a++;
 		}
 	}
-	putchar('\n');
+
+	putchar(end);
+
 	return (0);
 }
