@@ -1,19 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - main function in c
+ * Return: exit code (0 if no errors)
  */
+
 int main(void)
 {
 	char low;
+	char up;
 
-	for (low = 'a'; low <= 'z'; low++)
+	low = 'a';
+	up = 'A';
+
+	while (low <= 'z')
+	{
 		putchar(low);
-	for (low = 'A'; low <= 'Z'; low++)
-		putchar(low);
-		putchar('\n');
+		low++;
+	}
+
+	while (up <= 'Z')
+	{
+		putchar(up);
+		up++;
+	}
+
+	putchar('\n');
+
 	return (0);
 }
