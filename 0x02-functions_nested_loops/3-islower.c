@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check for lowercase charcter.
- *
+ * _islower - check for lowercase charcter.
+ * @c: variable
  * Return: Always 0.
  */
 int _islower(int c)
@@ -13,10 +13,10 @@ int _islower(int c)
 	{
 		if (c == b)
 		{
-			return 1;
+			return (1);
 		}
 	}
 
-	return 0;
+	return (0);
 
 }
