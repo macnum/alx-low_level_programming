@@ -2,7 +2,7 @@
 
 /**
   * _abs - this prints the sign of a number
-  * @int: variable
+  * @n: variable
   * Return: (0) success
   */
 
