@@ -3,28 +3,22 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
 /**
- * main - prints a value
- *
- * Return: 0 success
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	int lastDigit;
+	int n, lastNum;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	lastDigit = n % 10;
-	/* your code goes there */
-	printf("Last digit of %d is ", n);
-	if (lastDigit > 5)
-		printf("%d and is greater than 5\n", lastDigit);
-	else if (lastDigit == 0)
-		printf("%d and is 0\n", lastDigit);
-	else if (lastDigit < 6 && n != 0)
-		printf("%d and is less than 6 and not 0\n", lastDigit);
+	lastNum = n % 10;
+	if (lastNum > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastNum);
+	else if (lastNum == 0)
+		printf("Last digit of %d is %d and is 0\n", n, lastNum);
+	else
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastNum);
 	return (0);
 }

@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <string.h>
 /**
- * main - prints a set of charactyer strings to the stdout
- * Return: 0 (success)
- */
+* main - main function in the task
+*
+*
+*Return: return 1
+*/
 int main(void)
 {
-	char *value = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-	strlen(value));
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }

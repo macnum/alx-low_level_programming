@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - prints a string
- * Return: 0 (succes)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,4 +15,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-

@@ -1,1 +1,1 @@
-# 0x00. C - Hello, World
+## Learning low level programming using `c`
